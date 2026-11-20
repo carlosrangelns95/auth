@@ -1,0 +1,54 @@
+{
+    "name": "@carlosrangelns95/auth",
+    "author":"Carlos Rangel",
+    "version": "0.1.0",
+    "description": "Identidade e autorização reutilizável para serviços NestJS",
+    "license": "UNLICENSED",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "test": "jest"
+    },
+    "peerDependencies": {
+        "@nestjs/common": "^11.0.16",
+        "@nestjs/core": "^11.0.16",
+        "@nestjs/jwt": "^11.0.0",
+        "reflect-metadata": "^0.2.2",
+        "rxjs": "^7.8.2"
+    },
+    "devDependencies": {
+        "@nestjs/common": "^11.0.16",
+        "@nestjs/core": "^11.0.16",
+        "@nestjs/jwt": "^11.0.0",
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.14.1",
+        "jest": "^29.7.0",
+        "reflect-metadata": "^0.2.2",
+        "rxjs": "^7.8.2",
+        "ts-jest": "^29.3.1",
+        "typescript": "^5.8.3"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "ts"
+        ],
+        "rootDir": "./",
+        "testMatch": [
+            "**/src/**/*.spec.ts"
+        ],
+        "transform": {
+            "^.+\\.ts$": "ts-jest"
+        },
+        "testEnvironment": "node"
+    }
+}
